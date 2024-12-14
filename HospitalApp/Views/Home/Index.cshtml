@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Hospital Introduction";
+}
+
+<div class="container mt-5">
+    <!-- Başlık ve tanıtım -->
+    <div class="text-center mb-5">
+        <h1 class="display-4">Welcome to [Hastane Adı]</h1>
+        <p class="lead">Your trusted healthcare provider, committed to your health and well-being.</p>
+    </div>
+
+    <!-- Hastane Hakkında -->
+    <section id="about" class="mb-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>We are a leading hospital in the region, providing high-quality medical services with a team of expert doctors and nurses.</p>
+                <p>Our mission is to provide compassionate, accessible, and high-quality care for all patients. We strive for excellence in healthcare, ensuring patient safety, and fostering innovation.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Hospital" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <section id="services" class="bg-light py-5 mb-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" alt="Service 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Emergency Care</h5>
+                        <p class="card-text">24/7 emergency services with fast response times and skilled staff.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" alt="Service 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Specialist Consultations</h5>
+                        <p class="card-text">Consultations with expert doctors in various specialties for accurate diagnoses and treatment plans.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" alt="Service 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Surgical Services</h5>
+                        <p class="card-text">State-of-the-art surgical facilities with experienced surgeons for a wide range of procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="mb-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Location</h5>
+                <p>[Hastane Adı] is located at [Adres]. We are open 24/7 to serve you better.</p>
+                <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+                <p><strong>Email:</strong> contact@hospital.com</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Send Us a Message</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doktorlar -->
+    <section id="doctors" class="bg-light py-5">
+        <h2 class="text-center mb-4">Meet Our Doctors</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Doctor 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. John Doe</h5>
+                        <p class="card-text">Specialist in Cardiology with over 15 years of experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Doctor 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Jane Smith</h5>
+                        <p class="card-text">Experienced surgeon specializing in Orthopedics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Doctor 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Emily Davis</h5>
+                        <p class="card-text">Pediatrician with a passion for caring for young patients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
