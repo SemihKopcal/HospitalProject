@@ -1,0 +1,92 @@
+﻿@* @using System.Globalization
+@model IEnumerable<WebApplicationHospital.Models.Calendar>
+
+<h2>Yearly Calendar</h2>
+<div class="calendar">
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                @for (int month = 1; month <= 12; month++)
+                {
+                    <th>@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(month)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (int day = 1; day <= 31; day++) <!-- Maksimum 31 gün kontrolü -->
+            {
+                <tr>
+                    <td class="day-cell">@day</td>
+                    @for (int month = 1; month <= 12; month++)
+                    {
+                        var maxDay = DateTime.DaysInMonth(DateTime.Now.Year, month);
+
+                        // Gün, ayın maksimum gün sayısından küçükse
+                        if (day <= maxDay)
+                        {
+                            var date = new DateTime(DateTime.Now.Year, month, day);
+                            var calendarDate = Model.FirstOrDefault(c =>
+                                c.StartDate.Date <= date.Date && c.EndDate.Date >= date.Date);
+
+                            <td class="day-cell">
+                                @if (calendarDate != null)
+                                {
+                                    <div class="assignments">
+                                        @foreach (var assignment in calendarDate.Assignments)
+                                        {
+                                            <p>@assignment.Assistant.UserName</p>
+                                        }
+                                    </div>
+                                }
+                                <a asp-action="AssignAssistant" asp-route-date="@date.ToString("yyyy-MM-dd")" class="assign-task-link">Assign Task</a>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="day-cell"></td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .calendar-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Hücrelerin genişliği sabit */
+    }
+
+    .calendar-table th, .calendar-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .calendar-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .day-cell {
+        height: 80px; /* Hücre yüksekliği */
+        vertical-align: top;
+        padding: 5px;
+    }
+
+    .assign-task-link {
+        color: blue;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .assignments p {
+        margin: 2px 0; /* Atama listesi öğeleri arasındaki boşluk */
+        font-size: 0.9em;
+    }
+</style> *@

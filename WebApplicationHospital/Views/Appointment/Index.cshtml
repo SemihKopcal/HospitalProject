@@ -1,0 +1,33 @@
+﻿@model WebApplicationHospital.Models.Calendar
+
+<div class="container mt-4">
+    <h2>Appointments</h2>
+
+    <!-- Başlangıç ve Bitiş Tarihi -->
+    <p><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd HH:mm")</p>
+    <p><strong>End Date:</strong> @Model.EndDate.ToString("yyyy-MM-dd HH:mm")</p>
+
+    <h3>Müsaitlik kaydı başarıyla oluşturuldu!</h3>
+
+    <!-- Atama Kontrolü -->
+    @if (Model.Assignments != null && Model.Assignments.Any())
+    {
+        <h3>Assignments</h3>
+        <ul>
+            @foreach (var assignment in Model.Assignments)
+            {
+                <li>
+                    <strong>Assistant ID:</strong> @assignment.AssistantId <br />
+                    <strong>Calendar ID:</strong> @assignment.CalendarId
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No assignments found for this calendar.</p>
+    }
+
+    <!-- Yeni Randevu Ekleme Butonu -->
+    <a asp-action="Create" class="btn btn-primary mt-3">Add New Appointment</a>
+</div>

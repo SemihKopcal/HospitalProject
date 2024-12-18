@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Book Appointment";
+}
+
+<h2>Book Appointment</h2>
+
+<form asp-action="Book" method="post">
+    <input type="hidden" name="calendarId" value="@ViewBag.CalendarId" />
+    <button type="submit" class="btn btn-success">Confirm Appointment</button>
+</form>

@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\calendar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\calendar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\schedule\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\schedule\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\calendar\\assignassistant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\calendar\\assignassistant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\schedule\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\schedule\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\models\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\models\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\schedule\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\schedule\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\models\\schdule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\models\\schdule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|c:\\users\\monster\\source\\repos\\webapplicationhospital\\webapplicationhospital\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7D893-89AB-4669-9C18-56F8BDBB6AD8}|WebApplicationHospital\\WebApplicationHospital.csproj|solutionrelative:webapplicationhospital\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalendarController.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\CalendarController.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Controllers\\CalendarController.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Controllers\\CalendarController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAUwF4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:57:52.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Schedule\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Delete.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Schedule\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T17:41:12.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Schedule\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Edit.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Schedule\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T17:40:47.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Controllers\\ScheduleController.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Controllers\\ScheduleController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwC8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:36:12.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Calendar\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Calendar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Calendar\\Index.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Calendar\\Index.cshtml",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAiwFAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T21:51:24.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Schedule\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Index.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Schedule\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T15:38:48.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Schedule\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Schedule\\Create.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Schedule\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T16:16:13.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Calendar.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Calendar.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Models\\Calendar.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Calendar.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Models\\Calendar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:45:22.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssignAssistant.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Calendar\\AssignAssistant.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Calendar\\AssignAssistant.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Calendar\\AssignAssistant.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Calendar\\AssignAssistant.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T22:17:11.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Controllers\\AppointmentController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:37:39.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Schdule.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Schdule.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Models\\Schdule.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Schdule.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Models\\Schdule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:35:22.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Assignment.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Models\\Assignment.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Assignment.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Models\\Assignment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:41:36.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Program.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Program.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wB8AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:40:34.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:05:22.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplicationHospital\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAiwFUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T15:29:06.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "WebApplicationHospital\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\source\\repos\\WebApplicationHospital\\WebApplicationHospital\\Models\\Appointment.cs",
+              "RelativeToolTip": "WebApplicationHospital\\Models\\Appointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:35:50.489Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

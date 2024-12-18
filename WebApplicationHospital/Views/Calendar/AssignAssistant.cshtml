@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WebApplicationHospital.Models.Calendar>
+
+<div class="container mt-4">
+    <h2>Assign Assistant</h2>
+
+    <form asp-action="AssignAssistant" method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input type="date" id="startDate" name="startDate" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="endDate" class="form-label">End Date</label>
+            <input type="date" id="endDate" name="endDate" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="assistantId" class="form-label">Assistant ID</label>
+            <input type="number" id="assistantId" name="assistantId" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Assign Assistant</button>
+    </form>
+
+    @if (Model != null && Model.Any())
+    {
+        <h3>Calendars in Range</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Assignments</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var calendar in Model)
+                {
+                    <tr>
+                        <td>@calendar.Id</td>
+                        <td>@calendar.StartDate.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@calendar.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@(calendar.Assignments?.Count ?? 0)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No calendars found in the given date range.</p>
+    }
+</div>
