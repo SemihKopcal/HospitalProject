@@ -148,3 +148,9 @@ C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\obj\
 C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\obj\Debug\net8.0\WebApplicationHospital.genruntimeconfig.cache
 C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\obj\Debug\net8.0\ref\WebApplicationHospital.dll
 C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\obj\Debug\net8.0\WebApplicationHospital.sourcelink.json
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\MailKit.dll
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\MimeKit.dll
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\MONSTER\source\repos\WebApplicationHospital\WebApplicationHospital\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -123,7 +123,7 @@ namespace WebApplicationHospital.Controllers
                 _context.Calendars.Update(calendar);
                 await _context.SaveChangesAsync();
                 Console.WriteLine($"Calendar ID: {calendar.Id} successfully updated.");
-                return RedirectToAction("Index", "Appointment", new { calendarId = calendar.Id });
+                return RedirectToAction("Index", "Schedule", new { calendarId = calendar.Id });
             }
             catch (Exception ex)
             {

@@ -51,6 +51,12 @@
                                 <a class="nav-link" href="@Url.Action("Index", "Schedule")">Müsaitlik Belirleme</a>
                             </li>
                         }
+                        if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmergencyNews" asp-action="Index">Acil Durum Haberleri</a>
+                            </li>
+                        }
                     }
                 </ul>
                 <ul class="navbar-nav ms-auto">

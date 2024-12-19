@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<WebApplicationHospital.Models.Calendar>
 
+
 <table class="table">
     <thead>
         <tr>
@@ -12,7 +13,10 @@
     <tbody>
         @foreach (var item in Model)
         {
+
             <tr>
+                
+
                 <td>@item.Id</td>
                 <td>@item.StartDate.ToString("yyyy-MM-dd HH:mm")</td>
                 <td>@item.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
@@ -24,3 +28,5 @@
         }
     </tbody>
 </table>
+
+<a asp-action="Create" class="btn btn-primary">Create</a>

@@ -1,6 +1,7 @@
 // Program.cs
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using WebApplicationHospital.Data;
 using WebApplicationHospital.Models;
 
@@ -15,6 +16,9 @@ namespace WebApplicationHospital
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddAuthorization();
+
+            builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+            builder.Services.AddScoped(sp => sp.GetRequiredService<IOptions<SmtpSettings>>().Value);
 
             // Configure Entity Framework and Identity
             builder.Services.AddDbContext<ApplicationDbContext>(options =>

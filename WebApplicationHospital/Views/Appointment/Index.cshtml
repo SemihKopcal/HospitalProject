@@ -1,33 +1,60 @@
-﻿@model WebApplicationHospital.Models.Calendar
+﻿@model IEnumerable<WebApplicationHospital.Models.Appointment>
 
 <div class="container mt-4">
     <h2>Appointments</h2>
 
-    <!-- Başlangıç ve Bitiş Tarihi -->
-    <p><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd HH:mm")</p>
-    <p><strong>End Date:</strong> @Model.EndDate.ToString("yyyy-MM-dd HH:mm")</p>
-
-    <h3>Müsaitlik kaydı başarıyla oluşturuldu!</h3>
-
-    <!-- Atama Kontrolü -->
-    @if (Model.Assignments != null && Model.Assignments.Any())
-    {
-        <h3>Assignments</h3>
-        <ul>
-            @foreach (var assignment in Model.Assignments)
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Assistant</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
             {
-                <li>
-                    <strong>Assistant ID:</strong> @assignment.AssistantId <br />
-                    <strong>Calendar ID:</strong> @assignment.CalendarId
-                </li>
+                <tr>
+                    <td>@item.StartDate.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@item.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>
+                        @if (item.IsBooked)
+                        {
+                            <span class="badge bg-success">Booked</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning">Available</span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsBooked)
+                        {
+                            <span>@item.AssistantName</span>
+                        }
+                        else
+                        {
+                            <span>-</span>
+                        }
+                    </td>
+                    <td>
+                        @if (!item.IsBooked)
+                        {
+                            <form asp-action="BookPost" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="calendarId" value="@item.CalendarId" />
+                                <button type="submit" class="btn btn-primary btn-sm">Take</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary btn-sm" disabled>Taken</button>
+                        }
+                    </td>
+                </tr>
             }
-        </ul>
-    }
-    else
-    {
-        <p>No assignments found for this calendar.</p>
-    }
-
-    <!-- Yeni Randevu Ekleme Butonu -->
-    <a asp-action="Create" class="btn btn-primary mt-3">Add New Appointment</a>
+        </tbody>
+    </table>
 </div>

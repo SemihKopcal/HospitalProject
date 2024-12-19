@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 using WebApplicationHospital.Models;
 
 namespace WebApplicationHospital.Data
@@ -10,7 +11,8 @@ namespace WebApplicationHospital.Data
             : base(options)
         {
         }
-
+        public DbSet<EmergencyNews> EmergencyNews { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Calendar> Calendars { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
@@ -32,6 +34,8 @@ namespace WebApplicationHospital.Data
                 .WithMany()
                 .HasForeignKey(a => a.AssistantId)
                 .OnDelete(DeleteBehavior.Restrict); // Use Restrict to prevent cascading delete
+
+
         }
     }
 }

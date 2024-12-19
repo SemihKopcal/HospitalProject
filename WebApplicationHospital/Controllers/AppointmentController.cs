@@ -1,73 +1,107 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApplicationHospital.Data;
 using WebApplicationHospital.Models;
+using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
-namespace WebApplicationHospital.Controllers
+public class AppointmentController : Controller
 {
-    public class AppointmentController : Controller
+    private readonly ApplicationDbContext _context;
+    private readonly UserManager<ApplicationUser> _userManager;
+
+    public AppointmentController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
     {
-        private readonly ApplicationDbContext _context;
-        private readonly UserManager<ApplicationUser> _userManager;
+        _context = context;
+        _userManager = userManager;
+    }
 
-        public AppointmentController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+    // Müsait zamanları listele
+    //public async Task<IActionResult> Index()
+    //{
+    //    // Sadece profesörlerin oluşturduğu zamanlar
+    //    var availableCalendars = await _context.Calendars
+    //        .Where(c => c.StartDate >= DateTime.Now)
+    //        .Include(c => c.Assignments)
+    //        .ToListAsync();
+
+    //    return View(availableCalendars);
+    //}
+
+
+    // Randevu al (GET)
+    [HttpGet]
+    public async Task<IActionResult> Book(int calendarId)
+    {
+        var calendar = await _context.Calendars
+            .Include(c => c.Assignments)
+            .FirstOrDefaultAsync(c => c.Id == calendarId);
+
+        if (calendar == null)
         {
-            _context = context;
-            _userManager = userManager;
+            return NotFound("Calendar not found.");
         }
 
-        // [HttpGet] Metodu: Randevu Al Sayfasını Gösterir
-        [HttpGet]
-        public IActionResult Book(int id)
+        return View(calendar);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> BookPost(int calendarId)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
         {
-            ViewBag.CalendarId = id;
-            return View();
+            return RedirectToAction("Login", "Account");
         }
 
-        // [HttpPost] Metodu: Randevu Al Formunu İşler
-        [HttpPost]
-        public async Task<IActionResult> BookPost(int calendarId)
+        var calendar = await _context.Calendars
+            .Include(c => c.Assignments)
+            .FirstOrDefaultAsync(c => c.Id == calendarId);
+
+        if (calendar == null || calendar.Assignments.Any())
         {
-            var user = await _userManager.GetUserAsync(User);
+            // Calendar bulunamadı veya zaten alınmış
+            return RedirectToAction("Index");
+        }
 
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
+        // Randevu ataması
+        var assignment = new Assignment
+        {
+            AssistantId = user.Id,
+            CalendarId = calendarId
+        };
 
-            var assignment = new Assignment
+        _context.Assignments.Add(assignment);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Index");
+    }
+
+    public async Task<IActionResult> Index()
+    {
+        // Alınan ve alınmayan randevuları listele
+        var allCalendars = await _context.Calendars
+            .Include(c => c.Assignments)
+            .ToListAsync();
+
+        var viewModel = allCalendars.Select(calendar =>
+        {
+            var firstAssignment = calendar.Assignments.FirstOrDefault();
+            var assistantName = firstAssignment != null
+                ? _context.Users.FirstOrDefault(u => u.Id == firstAssignment.AssistantId)?.UserName
+                : null;
+
+            return new Appointment
             {
-                CalendarId = calendarId,
-                AssistantId = user.Id
+                CalendarId = calendar.Id,
+                StartDate = calendar.StartDate,
+                EndDate = calendar.EndDate,
+                IsBooked = calendar.Assignments.Any(),
+                AssistantName = assistantName
             };
+        }).ToList();
 
-            _context.Assignments.Add(assignment);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction(nameof(Index));
-        }
-
-        
-        public async Task<IActionResult> Index(int? calendarId)
-        {
-            if (calendarId == null)
-            {
-                return NotFound("Calendar ID not provided.");
-            }
-
-            var calendar = await _context.Calendars
-                .Where(c => c.Id == calendarId)
-                .Include(c => c.Assignments) // Eğer ilişkili veriler varsa
-                .FirstOrDefaultAsync();
-
-            if (calendar == null)
-            {
-                return NotFound("Calendar not found.");
-            }
-
-            return View(calendar);
-        }
+        return View(viewModel);
     }
 }

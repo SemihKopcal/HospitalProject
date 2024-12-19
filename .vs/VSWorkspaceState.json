@@ -5,6 +5,7 @@
     "\\WebApplicationHospital\\Controllers",
     "\\WebApplicationHospital\\Data",
     "\\WebApplicationHospital\\Views",
+    "\\WebApplicationHospital\\Views\\Calendar",
     "\\WebApplicationHospital\\Views\\Shared"
   ],
   "SelectedNode": "\\WebApplicationHospital.sln",
